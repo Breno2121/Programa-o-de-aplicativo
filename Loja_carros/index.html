@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Concessionaria</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+  <h1>New car veiculos</h1>
+
+  <div class="container">
+    <h2>Modelo</h2>
+    <div class="input-modelo">
+      <input type="text" id="modelo-text">
+    </div>
+    <h2>Cor</h2>
+    <div class="input-cor">
+      <input type="text" id="cor-text">
+    </div>
+    <h2>Ano</h2>
+    <div class="input-ano">
+      <input type="text" id="ano-text">
+    </div>
+    <h2>Preco</h2>
+    <div class="input-preco">
+      <input type="text" id="preco-text">
+    </div>
+    <h2>Foto</h2>
+    <div class="input-foto">
+      <input type="text" id="foto-text">
+    </div>
+
+    <button id="add-veiculo" onclick="adicionarVeiculo()">
+
+      adicionar veiculo
+
+    </button>
+  </div>
+  
+  <div class="container-2">
+    <ul id="lista-carros">
+    </ul>
+  </div>
+
+
+  <script src="scripts/index.js"></script>
+</body>
+
+</html>

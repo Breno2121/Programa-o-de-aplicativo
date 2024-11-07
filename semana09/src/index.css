@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e5e6f0;
+}
+
+header {
+  background-color: #ffffff;
+  margin-top: 30px;
+  width: 80%;
+  margin: 30px auto 10px;
+  border-radius: 10px;
+}
+
+header h2 {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: cursive;
+  text-align: center;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.4);
+  border-radius: 14px;
+}
+
+main {
+  height: 500px;
+  width: 80vw;
+  margin: 20px auto 0;
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+
+}
+
+form {
+  background-color: #ffffff;
+  height: fit-content;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.4);
+}
+
+aside {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+form h2 {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: cursive;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form .input-data {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+form .input-data:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+form .input-data label {
+  color: #565656;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+form .input-data input {
+  height: 38px;
+  font-size: 14px;
+  color: #666666;
+  border-radius: 8px;
+  outline: none;
+  border: 2px solid #f0f0f0;
+  background-color: #f0f0f0;
+  padding: 0 10px;
+}
+
+form .input-data button {
+  border-radius: 6px;
+  border: #666666;
+  height: 30px;
+}
+
+button:hover {
+  background-color: #b9b9b9;
+  border: 2px solid #b9b9b9;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.card .dados {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.card .dados strong {
+font-family: cursive;
+font-size: 20px;
+font-weight: bold;
+}
+
+.card .dados span {
+  font-family: cursive;
+  font-size: 15px;
+  }
+
+  .card .botao-card {
+    display: flex;
+    align-items: center;
+  }
+
+  .card .botao-card button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+
+.card .botao-card button#botao-ver {
+  background-color: #adff2f;
+  border-bottom-left-radius: 10px;
+} 
+
+.card .botao-card button#botao-deletar {
+  background-color: #ff4500;
+  border-bottom-right-radius: 10px;
+} 
+
+.card .botao-card button#botao-ver:hover {
+    background-color: #1e771e;
+}
+
+.card .botao-card button#botao-deletar:hover {
+  background-color: #771e1e;
+}

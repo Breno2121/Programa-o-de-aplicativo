@@ -1,90 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 06</title>
     <link rel="stylesheet" href="styles/style.css">
-    <title>Index</title>
+    <link rel="stylesheet" href="styles/header.css">
 </head>
 
-<body onkeypress="capturartecla(event)">
+<body onkeypress="capturarTecla(event)">
     <header>
-        <h1>Desenvolvimento Sistemas 2024</h1>
+        <h1>Desenvolvimento de Sistemas 2024</h1>
         <nav>
             <ul>
-                <li><a href="">Espaço estudante</a>
-                </li>
-                <li><a href="">Ambiente Virtual</a>
-                </li>
-                <li><a href="">Contato</a>
-                </li>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="view/sobre.html">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="main">
+        <section class="section-main">
             <h2>Seção de Introdução</h2>
             <p>
-                Este é um codigo nivel <strong>hard</strong>, que so os
-                fodoes demais entenderao!!!
+                Esta é a página de exemplos de tags, no qual são utilizadas várias
+                tags como <strong>HEADER, NAV, MAIN</strong>, entre outras.
             </p>
-            <img src="livros.jpg" alt="">
+            <img src="livros.jpg"
+                alt="">
         </section>
 
         <section class="section-main section-cursos">
-            <h1>Unidades Curriculares</h1>
+            <h2>Unidades Curriculares</h2>
 
             <div class="div-conteudo">
                 <div class="div-item">
-                    <h2>Logica de programação</h2>
-                    <p>Unidades curricular basica para os cursos de desenvolvimento</p>
+                    <h2>Lógica de Programação</h2>
+                    <p>Unidade curricular básica para os cursos de desenvolvimento.</p>
                 </div>
 
                 <div class="div-item">
-                    <h2>Programação de aplicativos</h2>
-                    <p>Unidade curricular intermediaria para os cursos de desenvolvimento.</p>
+                    <h2>Programação de Aplicativos</h2>
+                    <p>Unidade curricular intermediária para os cursos de desenvolvimento.</p>
                 </div>
 
                 <div class="div-item">
-                    <H2>Desenvolvimento de sistemas</H2>
-                    <p>Unidade curricular avancada para os cursos de desenvolvimento.</p>
+                    <h2>Desenvolvimento de Sistemas</h2>
+                    <p>Unidade curricular avançada para os cursos de desenvolvimento.</p>
                 </div>
             </div>
         </section>
 
         <section class="section-main section-contato">
             <h2>Contato</h2>
-            <form action="">
-                <label for="name">Nome Completo:</label>
-                <input type="text" id="name" name="name" required>
+            <form>
+                <label for="name">Nome completo:</label>
+                <input 
+                    type="text" 
+                    id="name" 
+                    name="name" 
+                    required 
+                    oninput="verificarDisabled()"
+                />
 
-                <label for="email">E-mail</label>
-                <input type="email" name="email" id="email" required>
+                <label for="email">E-mail:</label>
+                <input 
+                    type="email" 
+                    name="email" 
+                    id="email" 
+                    required 
+                    oninput="verificarDisabled()"
+                />
 
                 <label for="message">Mensagem: </label>
-                <textarea name="message" id="message" rows="5" required></textarea>
+                <textarea 
+                    id="message" 
+                    name="message" 
+                    rows="5" 
+                    required
+                    oninput="verificarDisabled()"
+                ></textarea>
 
-                <button type="submit" onclick="pegarinformacoes(event)" id="Enviar">Enviar</button>
+                <button 
+                    type="button"
+                    onclick="pegarInformacoes(event)"
+                    id="enviar"
+                    disabled
+                >Enviar</button>
             </form>
         </section>
 
         <section class="section-main section-cursos">
-            <h2>Comentarios</h2>
-            <div class="Comentarios" id="Comentarios">
-                <div class="comentario-item">
-                    <span>Breno - <strong>jose@gmail.com</strong></span>
-                    <p>Hoje o dia foi muito bonito!!!</p>
-                </div>
+            <h2>Comentários</h2>
+            <div class="comentarios" id="comentarios">
             </div>
-
-
         </section>
     </main>
 
     <script src="scripts/index.js"></script>
-
 </body>
 
 </html>

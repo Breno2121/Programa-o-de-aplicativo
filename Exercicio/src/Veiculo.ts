@@ -2,6 +2,8 @@ import leia, { keyInSelect } from 'readline-sync'
 
 
 export default class Veiculo{
+    private veiculos: Veiculo[] = [];
+
     constructor(){
         this.marca = leia.question("Digite a marca do veiculo: ");
         this.modelo = leia.question("Digite o modelo do veiculo: ");
@@ -40,7 +42,7 @@ export default class Veiculo{
     }
 
     public mostrarveiculo(){
-        console.log("Opcao indisponivel no momento, volte mais tarde...");
+        console.table(this.veiculos)
     }
 
 }
